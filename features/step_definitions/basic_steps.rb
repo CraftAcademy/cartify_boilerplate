@@ -20,3 +20,8 @@ end
 Given('I click {string}') do |element_text|
   click_on element_text
 end
+
+Then("stop") do
+  binding.pry
+end
+

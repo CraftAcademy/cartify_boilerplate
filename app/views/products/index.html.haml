@@ -3,5 +3,8 @@
 - @products.each do |product|
     %div{id: dom_id(product)}
         = product.name
-        = link_to "Add to order", '#'
+        =# link_to "Add to order", '#'
+        =# add_to_cart(product, 1, 'Add to cart')
+        = link_to "Add to order", cartify.order_items_path(order_item: {quantity: 7, product_id: product.id}), { method: :post, remote: true }
+
 

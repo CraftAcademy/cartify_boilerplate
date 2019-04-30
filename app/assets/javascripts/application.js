@@ -13,4 +13,10 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+//= require jquery
+//= require cartify/application
 //= require_tree .
+
+document.addEventListener('turbolinks:load', () => {
+
+})
