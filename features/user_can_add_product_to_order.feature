@@ -11,7 +11,7 @@ Feature: Feature name
     @javascript
     Scenario: User visits site and adds products to his order
         Given I visit the site
-        Then stop
         And I click "Add to order" for "Pizza"
-        And I click "Checkout"
+        And I click "Proceed to checkout"
+        Then stop
         Then I should be on the checkout page
